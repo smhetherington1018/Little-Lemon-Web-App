@@ -1,0 +1,119 @@
+:root{
+    --primary-color: #495E57;
+    --primary-color2: #f4ce14;
+    --secondary-color: #ee9972;
+    --secondary-color2: #fbdabb;
+    --secondary-color3: #edefee;
+    --secondary-color4: #333333;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/******************************************
+FORM
+*******************************************/
+
+#booking {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#restaurant-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--secondary-color4);
+    height: 350px;
+    padding-bottom: 50px;
+}
+
+#restaurant-display > img {
+    height: 200px;
+    border-radius: 5px;
+}
+
+#restaurant-display > img:nth-child(1) {
+    position: relative;
+    left: 50px;
+}
+
+#restaurant-display > img:nth-child(2) {
+    position: relative;
+    left: 250px;
+}
+
+#restaurant-display > img:nth-child(3) {
+    position: relative;
+    top: 90px;
+    right: 300px;
+}
+
+.reserve-form {
+    display: grid;
+    /* max-width: 400px; */
+    gap: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.reserve-text {
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.form-input > input,
+.form-input > select {
+    /* font-size: 16px;
+    font-weight: 700; */
+    /* display: block; */
+    margin-left: 20px;
+}
+
+.form-input > label {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.submit-button-container {
+    display: grid;
+    place-content: center;
+}
+
+.booking-form-button {
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.booking-info {
+    display: grid;
+    gap: 10px;
+    padding: 20px;
+}
+
+/******************************************
+CONFIRMED-BOOKING
+*******************************************/
+
+#confirmed-booking > img {
+    width: 100%;
+}
+
+.msg {
+    padding: 30px;
+    text-align: center;
+}
+
+.thanks-msg {
+    font-size: 1.1rem;
+
+}
+
+.restaurant-name {
+    color: var(--primary-color2);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
